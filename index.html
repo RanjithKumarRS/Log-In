@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Sign Up Form</h3>
+        </div>
+            <form action="FBSignup.php" method="POST" class="Signup-form" id="Signupformid">
+                
+                <div class="form-div ">
+                    <label for="name">Name</label>
+                    <input type="text" id="Signupnameid" name="Signupname" placeholder="Email Address">
+                        <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                                <small class="small"></small>
+                </div>
+                <div class="form-div">
+                    <label for="email">Email</label>
+                    <input type="email" id="Signupemailid" name="Signupemail" placeholder="UserName">
+                        <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                                <small>Invalid Name </small>
+                </div>
+                <div class="form-div">
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="Signupnumberid" name="Signupnumber" placeholder="Phone number">
+                        <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                                <small></small>
+                </div>
+                <div class="form-div">
+                    <label for="age">Age</label>
+                    <input type="number" id="Signupageid" name="Signupage" placeholder="Age">
+                        <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                                <small> </small>
+                </div>
+                <div class="form-div">
+                    <label for="gender">Gender</label>
+                    <select id="Signupgenderid"  name="Signupgender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="TransGender">TransGender</option>
+                    </select>
+                        <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                                <small ></small>
+                </div>
+                <div class="form-div">
+                    <label for="age">Password</label>
+                    <input type="password" id="Signuppasswordid" name="Signuppassword" placeholder="Password">
+                        <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                                <small>Invalid Password </small>
+                </div>
+                <div class="form-div">
+                    <button id="Signupbtn" type="submit"  name="submit">Sign Up</button>
+                </div>
+            </form>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+             <script src="FB.js"></script>
+</body>
+</html>
